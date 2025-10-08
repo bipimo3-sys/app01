@@ -1,0 +1,27 @@
+{
+  "name": "app01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup:git": "powershell -Command \"winget install --id Git.Git -e --source winget\"",
+    "setup:playwright": "npm install --save-dev @playwright/test && npx playwright install",
+    "setup:all": "npm run setup:git && npm run setup:playwright"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipimo3-sys/app01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bipimo3-sys/app01/issues"
+  },
+  "homepage": "https://github.com/bipimo3-sys/app01#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0"
+  }
+}
